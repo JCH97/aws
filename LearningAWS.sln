@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.API", "Customers.API\Customers.API.csproj", "{FDE3AB79-5EB2-4216-9310-5BA04A2F19C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQS", "SQS", "{050EF0BC-8440-4513-B4E1-7363A30842D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqsConsumer", "SqsConsumer\SqsConsumer.csproj", "{6CA9DAA7-3B5C-45D0-9561-DF3F232A1DC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqsPublisher", "SqsPublisher\SqsPublisher.csproj", "{5FB38244-9DC2-4C1A-9D98-C728F031A8D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDE3AB79-5EB2-4216-9310-5BA04A2F19C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE3AB79-5EB2-4216-9310-5BA04A2F19C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE3AB79-5EB2-4216-9310-5BA04A2F19C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE3AB79-5EB2-4216-9310-5BA04A2F19C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CA9DAA7-3B5C-45D0-9561-DF3F232A1DC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CA9DAA7-3B5C-45D0-9561-DF3F232A1DC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CA9DAA7-3B5C-45D0-9561-DF3F232A1DC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CA9DAA7-3B5C-45D0-9561-DF3F232A1DC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FB38244-9DC2-4C1A-9D98-C728F031A8D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FB38244-9DC2-4C1A-9D98-C728F031A8D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FB38244-9DC2-4C1A-9D98-C728F031A8D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FB38244-9DC2-4C1A-9D98-C728F031A8D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FDE3AB79-5EB2-4216-9310-5BA04A2F19C2} = {050EF0BC-8440-4513-B4E1-7363A30842D6}
+		{6CA9DAA7-3B5C-45D0-9561-DF3F232A1DC4} = {050EF0BC-8440-4513-B4E1-7363A30842D6}
+		{5FB38244-9DC2-4C1A-9D98-C728F031A8D3} = {050EF0BC-8440-4513-B4E1-7363A30842D6}
+	EndGlobalSection
+EndGlobal
