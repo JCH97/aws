@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.API", "Customers.API\Customers.API.csproj", "{FDE3AB79-5EB2-4216-9310-5BA04A2F19C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.API", "Weather.API\Weather.API.csproj", "{FDE3AB79-5EB2-4216-9310-5BA04A2F19C2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQS", "SQS", "{050EF0BC-8440-4513-B4E1-7363A30842D6}"
 EndProject
