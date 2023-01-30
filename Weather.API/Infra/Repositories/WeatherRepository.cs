@@ -1,5 +1,6 @@
 using Dapper;
 using LearningAWS.Application.Dtos;
+using LearningAWS.Domain.Entities;
 using LearningAWS.Infra.Database;
 
 namespace LearningAWS.Infra.Repositories;
@@ -13,13 +14,13 @@ public class WeatherRepository : IWeatherRepository
         _connectionFactory = connectionFactory;
     }
 
-    public async Task<bool> CreateAsync(WeatherCreateDto dto)
+    public async Task<bool> CreateAsync(WeatherForecast domain)
     {
         var connection = await _connectionFactory.CreateConnectionAsync();
         var ans =
             await connection.ExecuteAsync(
                 @"INSERT INTO Weather (Summary, Region, TemperatureC, Date) VALUES (@Summary, @Region, @TemperatureC, @Date)",
-                dto);
+                domain);
 
         return ans > 0;
     }

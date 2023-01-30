@@ -1,6 +1,17 @@
 using Dapper;
+using LearningAWS.Domain.Env;
+using Microsoft.Extensions.Options;
 
 namespace LearningAWS.Infra.Database;
+
+public static class DbInitializer
+{
+    public static async Task InitializeDbAsync(this IServiceProvider provider)
+    {
+        var databaseInitializer = provider.GetRequiredService<DatabaseInitializer>();
+        await databaseInitializer.InitializeAsync();
+    }
+}
 
 public class DatabaseInitializer
 {

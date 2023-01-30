@@ -2,7 +2,7 @@ namespace LearningAWS.Domain.Entities;
 
 public class WeatherForecast
 {
-    public int Id { get; init; }
+    public int Id { get; }
 
     public required string Date { get; init; }
 

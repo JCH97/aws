@@ -1,14 +1,17 @@
+using LearningAWS.Domain.Entities;
+using LearningAWS.Domain.Interfaces;
+
 namespace LearningAWS.Application.Dtos;
 
 public class WeatherDto
 {
-    public int Id { get; init; }
+    public int Id { get; set; }
 
-    public required string Date { get; init; }
+    public string Date { get; set; }
 
-    public required int TemperatureC { get; init; }
+    public int TemperatureC { get; set; }
 
-    public required string Region { get; init; }
+    public string Region { get; set; }
 
     public string? Summary { get; set; }
 }

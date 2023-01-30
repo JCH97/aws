@@ -1,4 +1,5 @@
 using LearningAWS.Application.UseCases.Weather;
+using LearningAWS.Infra.Events;
 using LearningAWS.Infra.Repositories;
 
 namespace LearningAWS.Infra.Installers;
@@ -14,5 +15,7 @@ public class MiscInstallers : IInstaller
 
         serviceCollection.AddScoped<IWeatherRepository, WeatherRepository>();
         serviceCollection.AddScoped<IWeatherUseCases, WeatherUseCases>();
+
+        serviceCollection.AddSingleton<ISqsPublisher, SqsPublisher>();
     }
 }
