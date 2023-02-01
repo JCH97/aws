@@ -5,7 +5,7 @@ using Amazon;
 using Amazon.Runtime;
 
 
-var credentials = new BasicAWSCredentials("AKIAXPGQ73HA3F62LPH6", "hk+keLq5JWUr6Ea/9iuxLmnynSrVcxnQM8bR5rKZ");
+var credentials = new BasicAWSCredentials("", "");
 
 var awsClient = new AmazonSQSClient(credentials, RegionEndpoint.USEast1);
 
@@ -18,7 +18,7 @@ var sendMessage = new SendMessageRequest
     QueueUrl = queueUrl.QueueUrl,
     MessageBody = JsonSerializer.Serialize(customer),
 
-    // attributes => this field be able to indicate the event-type, it could be util to filter the messages in consumers 
+    // attributes => By using this field we be able to indicate the event-type, it could be util to filter the messages in consumers 
     MessageAttributes = new Dictionary<string, MessageAttributeValue>
     {
         {

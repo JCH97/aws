@@ -6,5 +6,5 @@ namespace LearningAWS.Domain.Contracts;
 
 public class WeatherCreateMessage : WeatherDto, IMessage
 {
-    public Events.Events EventType { get; init; } = Events.Events.CreatedWeatherEntry;
+    public Events.Events EventType { get; init; } = Events.Events.WeatherCreated;
 }

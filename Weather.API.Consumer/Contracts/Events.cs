@@ -1,4 +1,4 @@
-namespace LearningAWS.Domain.Events;
+namespace Weather.API.Consumer.Contracts;
 
 public enum Events
 {

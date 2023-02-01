@@ -1,7 +1,9 @@
-namespace LearningAWS.Application.Dtos;
+namespace Weather.API.Consumer.Contracts;
 
-public class WeatherCreateDto : WeatherDto
+public class WeatherCreatedMessage : ISqsMessage
 {
+    public Events EventType { get; init; } = Events.WeatherCreated;
+
     public int Id { get; set; }
 
     public string Date { get; set; }
