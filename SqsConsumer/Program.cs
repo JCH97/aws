@@ -33,4 +33,7 @@ while (!cts.IsCancellationRequested)
     // await Task.Delay(3000);
 }
 
-public record CustomerCreated(string name, string lastName, int age);
+namespace SqsConsumer
+{
+    public record CustomerCreated(string name, string lastName, int age);
+}

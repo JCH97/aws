@@ -1,9 +1,9 @@
-﻿using Amazon.SQS;
-using Amazon.SQS.Model;
-using System.Text.Json;
+﻿using System.Text.Json;
 using Amazon;
 using Amazon.Runtime;
-
+using Amazon.SQS;
+using Amazon.SQS.Model;
+using SqsPublisher;
 
 var credentials = new BasicAWSCredentials("", "");
 
@@ -31,4 +31,7 @@ await awsClient.SendMessageAsync(sendMessage);
 
 Console.WriteLine("Message sent");
 
-public record CustomerCreated(string name, string lastName, int age);
+namespace SqsPublisher
+{
+    public record CustomerCreated(string name, string lastName, int age);
+}
